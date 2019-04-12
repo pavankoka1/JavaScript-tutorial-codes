@@ -1,0 +1,62 @@
+<html>
+<head>
+
+	<script type="text/javascript">
+		
+		function person(name, age){
+			this.n = name;
+			this.a = age;
+			this.getRetire = yearsLeft;
+		}
+		function yearsLeft(){
+			var years = 65 - this.a;
+			return years;
+		}
+
+		var koka = new person("koka", 21);
+//		document.write(koka.getRetire());
+
+	</script>
+
+</head>
+
+<body>
+
+	<form>
+		Username: <input type="text" name="enter name">
+		Password: <input type="text" name="enter password">
+		<br />
+		<input type="submit" name="Submit!"> 
+	</form>
+
+<script type="text/javascript">
+	
+	var a = new Array("pavan","koka");
+	var b = new Array("anjali","kanodia");
+
+	var c = a.concat(b);
+	var s = c.join(" ");
+//	document.write(c + " " + s);
+
+//	var  n = prompt("enter","");
+//	var ans = Math.sqrt(n);
+//	document.write(ans);
+
+	function printTime(){
+		var now = new Date();
+		var hours = now.getHours();
+		var minutes = now.getMinutes();
+		var seconds = now.getSeconds();
+		document.write(hours + " : " + minutes + " : " + seconds + "<br />");
+	}
+
+	var x = document.forms[0].length;
+	document.write(x + "<br />");
+	printTime();
+//	setInterval("printTime()", 60000);
+
+</script>
+
+</body>
+
+</html>
